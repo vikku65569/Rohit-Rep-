@@ -10,7 +10,7 @@ COPY requirements.txt /requirements.txt
 
 RUN cd /
 RUN pip3 install -U pip && pip3 install -U -r requirements.txt
-RUN mkdir /VJ-FILTER-BOT
-WORKDIR /VJ-FILTER-BOT
-COPY . /VJ-FILTER-BOT
+RUN mkdir /Anime-filter-bot
+WORKDIR /Anime-filter-bot
+COPY . /Anime-filter-bot
 CMD ["python", "bot.py"]
