@@ -3,9 +3,11 @@
 # Ask Doubt on telegram @KingVJ01
 
 class script(object):
-    START_TXT = """<b><blockquote>ʜᴇʟʟᴏ {}, ᴍʏ ɴᴀᴍᴇ <a href=https://t.me/{}>{}</a></blockquote>
-    
-ɪ ᴀᴍ ᴀ ᴘᴏᴡᴇʀꜰᴜʟ ᴀɴɪᴍᴇ ᴀᴜᴛᴏꜰɪʟᴛᴇʀ ʙᴏᴛ. ʏᴏᴜ ᴄᴀɴ ᴜsᴇ ᴍᴇ ɪɴ ʏᴏᴜʀ ɢʀᴏᴜᴘ ɪ ᴡɪʟʟ ɢɪᴠᴇ ᴀɴɪᴍᴇ ɪɴ ʏᴏᴜʀ ɢʀᴏᴜᴘ !! 😍\n\n<blockquote>🌿 ᴍᴀɪɴᴛᴀɪɴᴇᴅ ʙʏ : <a href="https://t.me/Solo_Leveling_Botz">ꜱᴏʟᴏ ʟᴇᴠᴇʟɪɴɢ</a></blockquote></b>"""
+    START_TXT = """<b> ʜᴇʟʟᴏ {},
+
+ᴍʏ ɴᴀᴍᴇ ɪꜱ <a href=https://t.me/{}>{}</a>, ᴊᴜꜱᴛ ᴇɴᴛᴇʀ ʏᴏᴜʀ ᴍᴏᴠɪᴇ, ꜱᴇʀɪᴇꜱ, ᴀɴɪᴍᴇ ᴏʀ ᴋ-ᴅʀᴀᴍᴀ ɴᴀᴍᴇ & ɢᴇᴛ ᴀʟʟ ɪᴛ.
+
+ᴄʀᴇᴀᴛᴇᴅ ᴡɪᴛʜ ❤️ : <a href="https://t.me/moviesvisit">ᴍᴏᴠɪᴇ ʙᴏx</a></b>"""
 
     CLONE_START_TXT = """<b><blockquote>ʜᴇʟʟᴏ {}, ᴍʏ ɴᴀᴍᴇ <a href=https://t.me/{}>{}</a></blockquote>
     
