@@ -126,11 +126,11 @@ async def start(client, message):
                 reply_markup=reply_markup
             )
             filesarr.append(msg)
-        k = await client.send_message(chat_id = message.from_user.id, text=f"<b></b>")
+        k = await client.send_message(chat_id = message.from_user.id, text=f"<b><u>❗️❗️❗️IMPORTANT❗️️❗️❗️</u></b>\n\nThis Movie Files/Videos will be deleted in <b><u>10 mins</u> 🫥 <i></b>(Due to Copyright Issues)</i>.\n\n<b><i>Please forward this ALL Files/Videos to your Saved Messages and Start Download there</i></b>")
         await asyncio.sleep(600)
         for x in filesarr:
             await x.delete()
-        await k.edit_text("<b></b>")
+        await k.edit_text("<b>Your All Files/Videos is successfully deleted!!!</b>")
         return    
     elif data.startswith("files"):
         if cd['url']:
@@ -145,7 +145,7 @@ async def start(client, message):
             ]]
             k = await client.send_message(chat_id=message.from_user.id,text=f"<b>📕Nᴀᴍᴇ ➠ : <code>{files['file_name']}</code> \n\n🔗Sɪᴢᴇ ➠ : {get_size(files['file_size'])}\n\n📂Fɪʟᴇ ʟɪɴᴋ ➠ : {g}\n\n<i>Note: This message is deleted in 20 mins to avoid copyrights. Save the link to Somewhere else</i></b>", reply_markup=InlineKeyboardMarkup(btn))
             await asyncio.sleep(1200)
-            await k.edit("<b></b>")
+            await k.edit("<b>Your message is successfully deleted!!!</b>")
             return
     user = message.from_user.id
     files_ = await get_file_details(file_id)           
@@ -176,10 +176,10 @@ async def start(client, message):
         protect_content=False,
         reply_markup=reply_markup
     )
-    k = await msg.reply("<b></b>",quote=False)
+    k = await msg.reply("<b><u>❗️❗️❗️IMPORTANT❗️️❗️❗️</u></b>\n\nThis Movie File/Video will be deleted in <b><u>10 mins</u> 🫥 <i></b>(Due to Copyright Issues)</i>.\n\n<b><i>Please forward this File/Video to your Saved Messages and Start Download there</i></b>",quote=True)
     await asyncio.sleep(600)
     await msg.delete()
-    await k.edit_text("<b></b>")
+    await k.edit_text("<b>Your File/Video is successfully deleted!!!</b>")
     return   
   
 @Client.on_message(filters.command("settings") & filters.private)
